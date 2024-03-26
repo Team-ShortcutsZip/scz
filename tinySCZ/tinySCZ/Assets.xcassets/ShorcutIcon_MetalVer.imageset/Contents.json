@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ShorcutIcon_MetalVer.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ForAppleMusic+Image.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

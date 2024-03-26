@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ShorcutIcon_BlueClayVer.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
