@@ -275,7 +275,7 @@ struct ExploreTabView: View {
         .scrollBounceBehavior(.basedOnSize)
         .scrollClipDisabled()
         .mask {
-            LinearGradient(colors: [.black.opacity(0.25),.black,.black, .black,.black,.black,.black,.black,.black,.black,.black,.black, .clear.opacity(0.25)], startPoint: UnitPoint(x: 0.5, y: 0.0), endPoint: UnitPoint(x: 0.5, y: 1.0))
+            LinearGradient(colors: [.black.opacity(0.5),.black,.black, .black,.black,.black,.black,.black,.black,.black,.black,.black.opacity(0.95), .black.opacity(0.5)], startPoint: UnitPoint(x: 0.5, y: 0.0), endPoint: UnitPoint(x: 0.5, y: 1.0))
                 .ignoresSafeArea()
         }
     }

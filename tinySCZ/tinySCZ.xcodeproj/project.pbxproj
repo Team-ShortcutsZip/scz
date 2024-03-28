@@ -17,6 +17,7 @@
 		A49338692BB2EE5E0020BB46 /* VerticalShortcutCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49338682BB2EE5E0020BB46 /* VerticalShortcutCardView.swift */; };
 		A493386B2BB2F70A0020BB46 /* PromotedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493386A2BB2F70A0020BB46 /* PromotedCardView.swift */; };
 		A493386D2BB30C800020BB46 /* PromotedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493386C2BB30C800020BB46 /* PromotedContentView.swift */; };
+		A493386F2BB59D410020BB46 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493386E2BB59D410020BB46 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A49338682BB2EE5E0020BB46 /* VerticalShortcutCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalShortcutCardView.swift; sourceTree = "<group>"; };
 		A493386A2BB2F70A0020BB46 /* PromotedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotedCardView.swift; sourceTree = "<group>"; };
 		A493386C2BB30C800020BB46 /* PromotedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotedContentView.swift; sourceTree = "<group>"; };
+		A493386E2BB59D410020BB46 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				A49338652BB28BD80020BB46 /* UIComponents */,
 				A49338522BAD09240020BB46 /* tinySCZApp.swift */,
 				A49338542BAD09240020BB46 /* ContentView.swift */,
+				A493386E2BB59D410020BB46 /* OnboardingView.swift */,
 				A49338662BB2AD640020BB46 /* ExploreTabView.swift */,
 				A493386C2BB30C800020BB46 /* PromotedContentView.swift */,
 				A49338562BAD09250020BB46 /* Assets.xcassets */,
@@ -168,6 +171,7 @@
 				A49338642BB28BCA0020BB46 /* AnimatedAppLogoView.swift in Sources */,
 				A49338622BAD0CE40020BB46 /* Buttons.swift in Sources */,
 				A49338692BB2EE5E0020BB46 /* VerticalShortcutCardView.swift in Sources */,
+				A493386F2BB59D410020BB46 /* OnboardingView.swift in Sources */,
 				A49338672BB2AD640020BB46 /* ExploreTabView.swift in Sources */,
 				A493386D2BB30C800020BB46 /* PromotedContentView.swift in Sources */,
 				A49338552BAD09240020BB46 /* ContentView.swift in Sources */,

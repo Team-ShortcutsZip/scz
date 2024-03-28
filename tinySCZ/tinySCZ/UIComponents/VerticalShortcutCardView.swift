@@ -18,78 +18,51 @@ struct BoldVerticalShortcutCardView: View {
     
     var body: some View {
         
-        RoundedRectangle(cornerRadius: 16)
-            .foregroundStyle(LinearGradient(
-                stops: [
-                    Gradient.Stop(color: Color(red: 0.96, green: 0.43, blue: 0.44), location: 0.00),
-                    Gradient.Stop(color: Color(red: 0.95, green: 0.35, blue: 0.37), location: 1.00),
-                ],
-                startPoint: UnitPoint(x: 0.5, y: 0),
-                endPoint: UnitPoint(x: 0.5, y: 1)
-            ))
-            .frame(width: 116, height: 156)
-            .overlay {
-                
-                ZStack {
+        ZStack {
+            
+            RoundedRectangle(cornerRadius: 16)
+                .foregroundStyle(LinearGradient(
+                    stops: [
+                        Gradient.Stop(color: Color(red: 0.96, green: 0.43, blue: 0.44), location: 0.00),
+                        Gradient.Stop(color: Color(red: 0.95, green: 0.35, blue: 0.37), location: 1.00),
+                    ],
+                    startPoint: UnitPoint(x: 0.5, y: 0),
+                    endPoint: UnitPoint(x: 0.5, y: 1)
+                ))
                     
-                    RoundedRectangle(cornerRadius: 16)
-                        .strokeBorder(.white.opacity(0.12), lineWidth: 2.0)
-                    
-                    VStack(alignment: .leading) {
                         
-                        HStack {
-                            ZStack {
-                                Image(systemName: "seal.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 28)
-                                    .foregroundStyle(.white.opacity(0.64))
+                        RoundedRectangle(cornerRadius: 16)
+                            .strokeBorder(.white.opacity(0.12), lineWidth: 2.0)
+                        
+                        VStack(alignment: .leading) {
+                            
+                            HStack {
+                                ZStack {
+                                    Image(systemName: "seal.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 28)
+                                        .foregroundStyle(.white.opacity(0.64))
+                                    
+                                    Image(systemName: "seal")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 28)
+                                        .foregroundStyle(.white.opacity(0.24))
+                                    
+                                    Text(String(rank))
+                                        .fontDesign(.rounded)
+                                        .fontWeight(.semibold)
+                                        .foregroundStyle(.white.opacity(0.88))
+                                        .blendMode(.colorBurn)
+                                }
                                 
-                                Image(systemName: "seal")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 28)
-                                    .foregroundStyle(.white.opacity(0.24))
+                                Spacer()
                                 
-                                Text(String(rank))
-                                    .fontDesign(.rounded)
-                                    .fontWeight(.semibold)
-                                    .foregroundStyle(.white.opacity(0.88))
-                                    .blendMode(.colorBurn)
-                            }
+                            } // HStack
                             
-                            Spacer()
-                            
-                        } // HStack
-                        
-                        Text(name)
-                            .fontWeight(.bold)
-                            .foregroundStyle(LinearGradient(
-                                stops: [
-                                    Gradient.Stop(color: Color(red: 0.25, green: 0.25, blue: 0.25).opacity(0.64), location: 0.00),
-                                    Gradient.Stop(color: Color(red: 0.25, green: 0.25, blue: 0.25).opacity(0.31), location: 1.00),
-                                ],
-                                startPoint: UnitPoint(x: 0.5, y: 0),
-                                endPoint: UnitPoint(x: 0.5, y: 1)
-                            ))
-                            .blendMode(.plusDarker)
-                            .padding(.leading, 4)
-                        
-                        Spacer()
-                        
-                        HStack(alignment: .bottom, spacing: 2) {
-                            Image(systemName: "arrow.down.to.line")
-                                .imageScale(.small)
-                            
-                            Text("1,028")
-                                .font(.footnote)
-                                .fontDesign(.rounded)
-                                .fontWeight(.medium)
-                            
-                            Spacer()
-                            
-                            Image(systemName: sfSymbolSystemName)
-                                .imageScale(.large)
+                            Text(name)
+                                .fontWeight(.bold)
                                 .foregroundStyle(LinearGradient(
                                     stops: [
                                         Gradient.Stop(color: Color(red: 0.25, green: 0.25, blue: 0.25).opacity(0.64), location: 0.00),
@@ -98,17 +71,43 @@ struct BoldVerticalShortcutCardView: View {
                                     startPoint: UnitPoint(x: 0.5, y: 0),
                                     endPoint: UnitPoint(x: 0.5, y: 1)
                                 ))
+                                .blendMode(.plusDarker)
+                                .padding(.leading, 4)
                             
-                        } // HStack
-                        .foregroundStyle(Color("CharcoalGray").opacity(0.48))
-                        .blendMode(.multiply)
-                        .padding([.horizontal, .bottom], 2)
-                    } // VStack
-                    .padding(8)
-                }
-            }
+                            Spacer()
+                            
+                            HStack(alignment: .bottom, spacing: 2) {
+                                Image(systemName: "arrow.down.to.line")
+                                    .imageScale(.small)
+                                
+                                Text("1,028")
+                                    .font(.footnote)
+                                    .fontDesign(.rounded)
+                                    .fontWeight(.medium)
+                                
+                                Spacer()
+                                
+                                Image(systemName: sfSymbolSystemName)
+                                    .imageScale(.large)
+                                    .foregroundStyle(LinearGradient(
+                                        stops: [
+                                            Gradient.Stop(color: Color(red: 0.25, green: 0.25, blue: 0.25).opacity(0.64), location: 0.00),
+                                            Gradient.Stop(color: Color(red: 0.25, green: 0.25, blue: 0.25).opacity(0.31), location: 1.00),
+                                        ],
+                                        startPoint: UnitPoint(x: 0.5, y: 0),
+                                        endPoint: UnitPoint(x: 0.5, y: 1)
+                                    ))
+                                
+                            } // HStack
+                            .foregroundStyle(Color("CharcoalGray").opacity(0.48))
+                            .blendMode(.multiply)
+                            .padding([.horizontal, .bottom], 2)
+                        } // VStack
+                        .padding(8)
             .shadow(color: Color("CharcoalGray").opacity(0.04), radius: 4, x: 0, y: 2)
-        
+        }
+        .frame(width: 116, height: 156)
+
     }
 }
 
